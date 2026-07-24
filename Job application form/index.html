@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <p>We are looking forward to receiving your application!</p>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="e.g. John David Smith">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            <label>Which position do you wish to apply for?</label>
+            <select name="position" id="position">
+                <option value="Customer Service Representative">Customer Service Representative</option>
+                <option value="Customer Service Team Leader">Customer Service Team Leader</option>
+                <option value="Customer Service Manager">Customer Service Manager</option>
+                <option value selected>Select a position</option>
+            </select>
+            <fieldset class="radio-group">
+                <legend>Availability:</legend>
+                <input type="radio" id="full-time" name="availability" value="full-time">
+                                <label for="full-time">Full-Time</label>
+                
+                <input type="radio" id="part-time" name="availability" value="part-time">
+                <label for="part-time">Part-Time</label>
+            </fieldset>
+            <label for="message">Please tells us why you want to work with us</label>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Please type your message here..."></textarea>
+            <button type="submit" formaction="https://httpbin.org/get" formmethod="get">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

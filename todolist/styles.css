@@ -1,0 +1,80 @@
+body {
+  font-family: Gill Sans, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.container {
+  background-color: #22577A;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px 7px lightgrey;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  color: white;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+.todo-list li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  padding: 10px;
+  background-color: #57CC99;
+  border-radius: 15px;
+  position: relative;
+}
+
+.sub-item {
+  list-style-type: square;
+  color: white;
+}
+
+
+.sub-item-link {
+  text-decoration: none;
+  font-style: italic;
+}
+
+a:link {
+  color: #22577A;
+}
+
+a:visited {
+  color: lightgrey;
+}
+
+a:hover {
+  color: lightgrey
+}
+
+a:focus {
+  color: #22577A;
+  outline: 2px solid lightgrey;
+}
+
+a:active {
+  color: #38A3A5;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+hr {
+  border: dotted 1.5px;
+  width: 7px;
+}

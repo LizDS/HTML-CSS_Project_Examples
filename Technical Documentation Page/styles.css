@@ -1,0 +1,293 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+ background-color: #E9ECEF;
+ color: #212529;
+ display: block;
+ line-height: 1.5rem;
+ margin: 8px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 1px solid rgba(33, 37, 41, 0.3);
+    box-shadow: 0 0 2px 4px rgba(206, 212, 218, 0.3);
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    list-style: none;
+    border-top: 1px solid rgba(33, 37, 41, 0.3);
+    color: #212529;
+    position: relative;
+}
+
+#navbar li:last-of-type {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.3);
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: #212529;
+    cursor: pointer;
+    display: block;
+}
+
+a.nav-link:hover {
+    text-shadow: 2px 2px 2px #CED4DA;
+}
+
+a.nav-link:visited {
+    color: #6C757D;
+}
+
+a.nav-link:active {
+    color: #FCA311;
+}
+
+#main-doc {
+    position: absolute;
+    margin-bottom: 110px;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+header {
+   color: #212529;
+   font-size: 2rem;
+   font-weight: bold;
+   margin: 10px; 
+   text-align: center;
+   line-height: 2rem;
+}
+
+#main-doc header{
+    text-align: left;
+    margin: 0px;
+}
+
+article {
+    margin: 15px;
+    font-size: 0.96rem;
+}
+
+.code-example, .example-inbrowser1 {
+    border: 1px solid rgba(33, 37, 41, 0.3);
+    box-shadow: 0 0 2px 4px rgba(206, 212, 218, 0.3);
+    border-radius: 20px;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    padding: 15px 25px 15px 25px;
+    margin: 4px;
+    width: 90%; 
+    display: block;
+    background-color: rgba(173, 181, 189, 0.5);
+}
+
+.code-example > div {
+    display: block;
+}
+
+div.code-nest2 {
+    padding-left: 30px;
+}
+
+div.code-nest3 {
+    padding-left: 60px;
+}
+
+div.code-nest4 {
+    padding-left: 90px;
+}
+
+div.code-nest5 {
+    padding-left: 120px;
+}
+
+.example-inbrowser1 > h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.example-inbrowser1 > h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.example-inbrowser1 > form > * {
+    display: block;
+}
+
+.example-inbrowser1 > form > label {
+    margin: 5px 0; 
+}
+
+.example-inbrowser1 > form > input,  .example-inbrowser1 > form > textarea {
+    width: 95%;
+    margin: 5px auto;
+}
+
+#example-inbrowser1-nav > li, #example-inbrowser1-nav > a {
+    font-size: 1rem;
+}
+
+@media (max-width: 589px) {
+    #navbar {
+        width: 150px;
+        padding: 5px;
+    }
+
+    a.nav-link {
+        padding: 10px 10px;
+    }
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    #navbar header {
+        font-size: 1.1rem;
+    }
+
+    #main-doc {
+        margin-left: 150px; 
+        min-width: 50px;
+        max-width: 410px;
+    }
+
+    .code-example {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        height: auto;
+    }
+
+    .code-example > * {
+        font-size: 0.75rem;
+        width: 100%;
+        
+    }
+
+    div.code-nest2 {
+        padding-left: 10px;
+    }
+
+    div.code-nest3 {
+        padding-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    div.code-nest4 {
+        padding-left: 30px;
+    }
+
+    div.code-nest5 {
+        padding-left: 40px;
+    }
+
+}
+
+@media (min-width: 589px) and (max-width: 649px) {
+    #navbar {
+        width: 200px;
+        padding: 5px;
+    }
+
+    a.nav-link {
+        padding: 10px 10px;
+    }
+
+    #navbar header {
+        font-size: 1.4rem;
+    }
+
+    header {
+        font-size: 1.7rem;
+    }
+
+    #main-doc {
+        margin-left: 200px; 
+        min-width: 90px;
+        max-width: 440px;
+    }
+
+}
+
+
+@media (min-width: 649px) and (max-width: 768px) {
+    #navbar {
+        width: 250px;
+        padding: 5px;
+    }
+
+    a.nav-link {
+        padding: 10px 10px;
+    }
+
+    #navbar header {
+        font-size: 1.6rem;
+    }
+
+    header {
+        font-size: 1.85rem;
+    }
+
+    #main-doc {
+        margin-left: 250px; 
+        min-width: 90px;
+        max-width: 450px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #navbar {
+        width: 300px;
+        padding: 10px;
+    }
+
+    a.nav-link {
+        padding: 10px 30px;
+    }
+
+    #navbar header {
+        font-size: 1.8rem;
+    }
+
+    #main-doc {
+        margin-left: 310px;
+        min-width: 459px;
+        max-width: 1300px; 
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+

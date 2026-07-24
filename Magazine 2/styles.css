@@ -1,0 +1,97 @@
+* ,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --header1-font: 'Anton', sans-serif;
+    --header2-font: 'Raleway', sans-serif;
+    --article-font: 'Baskervville', serif;
+    --color1: #FFFFFF;
+    --color2: #E5E5E5;
+    --color3: #F2F2F2;
+    --color4: #CCCCCC;
+    --color4: #14213D;
+    ---color5: #000000;
+}
+
+html {
+    font-size: 62.5%;
+    display: block;
+}
+
+body {
+    background-color: var(--color2, #E5E5E5);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--header1-font, 'Anton', sans-serif);
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: var(--header2-font, 'Raleway', sans-serif);
+    font-size: 2rem;
+}
+
+p {
+    font-family: var(--article-font, 'Baskervville', serif);
+    font-size: 1.5rem;
+}
+
+
+.magazine-cover {
+    display: grid;
+    grid-template-areas: 
+    'title title title'
+    'feature-article feature-article cover-image'
+    'small-article1 small-article2 cover-image';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 10px;
+    width: 80%;
+    background-color: var(--color1, #FFFFFF);
+}
+
+.title {
+    grid-area: title;
+    background-color: var(--color4, #14213D);
+    color: var(--color1, #FFFFFF);
+    padding: 10px;
+    text-align: center;
+}
+
+.feature-article {
+    grid-area: feature-article;
+    background-color: var(--color3, #F2F2F2);
+    padding: 10px;
+}
+
+.small-article1 {
+    grid-area: small-article1;
+    background-color: var(--color3, #F2F2F2);
+    padding: 10px;
+}
+
+.small-article2 {
+    grid-area: small-article2;
+    background-color: var(--color3, #F2F2F2);
+    padding: 10px;
+}
+
+.cover-image {
+    grid-area: cover-image;
+    background-color: var(--color2, #E5E5E5);
+    padding: 10px;
+}
+
+img {
+    width: 300px;
+}

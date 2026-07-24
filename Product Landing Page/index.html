@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Landing Page</title>
+    <meta name="description" content="Product Landing Page - My Favourite Coffee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/93f3d9aa47.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="img/KnowItAll_logo_circle.png" alt="Know-It-All learning centre logo">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#our-course">Our Course</a></li>
+                <li><a class="nav-link" href="#business-english">Business English</a></li>
+                <li><a class="nav-link" href="#prices">Prices</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container"></div>
+    <section id="hero">
+        <h1>Learn Business English</h1>
+        <p>Learning Business English with a native speaker!</p>
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+            <input type="email" name="email" id="email" placeholder="Input your email here..." required>
+            <input id="submit" type="submit" class="btn" value="Get Started">
+        </form>
+    </section>
+    <div class="container">
+        <section id="our-course">
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa-solid fa-person-chalkboard fa-2xl"></i>
+                </div>
+                <div class="description">
+                    <h2>Enhance your Business English Skills</h2>
+                    <p>Enhance your or your employees Business English skills through our courses.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa-solid fa-route fa-2xl"></i>
+                </div>
+                <div class="description">
+                    <h2>English for your Career Journey</h2>
+                    <p>We help you on your path to build your career</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa-solid fa-business-time fa-2xl"></i>
+                </div>
+                <div class="description">
+                    <h2>English for Busy Professionals</h2>
+                    <p>We ensure that your time learning is spent wisely and with purpose</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="business-english">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Ue8xUPqvnfA?si=RgUaiOHlhFsvQQRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    
+        <section id="prices">
+            <div class="product" id="individual-class">
+                <div class="level">Individual Lessons</div>
+                <h2>Contact Us</h2>
+                <p class="price-note">*price per class</p>
+                <ol>
+                    <li>One-on-One attention</li>
+                    <li>Fully concentrated time for your learning</li>
+                    <li>60min lesson</li>
+                    <li>...</li>
+                </ol>
+                <div id="flex-end"><button class="btn">select</button></div>
+            </div>
+            <div class="product" id="group-class">
+                <div class="level">Group Lessons</div>
+                <h2>Contact Us</h2>
+                <p class="price-note">*price per month for a group of max 10 students</p>
+                <ol>
+                    <li>Value for money</li>
+                    <li>Great for employers seeking to enhance employee skills</li>
+                    <li>90min lesson</li>
+                    <li>...</li>
+                </ol>
+                <div id="flex-end"><button class="btn">select</button></div>
+            </div>
+        </section>    
+    </div>
+</body>
+
+</html>

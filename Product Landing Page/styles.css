@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+
+html {
+     font-family: "Nunito", sans-serif;
+}
+
+#header {
+   position: fixed;
+   top: 0;
+   min-height: 75px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: #fff;
+}
+
+.logo {
+     width: 60vw;
+}
+
+.logo>img {
+   width: 30%;
+   height: 30%;
+   max-width: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 10px;
+   margin-left: 20px;
+}
+
+a {
+     color: #000;
+     text-decoration: none;
+} 
+
+nav {
+     font-weight: 400;
+}
+
+li {
+     list-style: none;
+}
+
+
+nav>ul {
+     width: 35vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+}
+
+.container {
+     max-width: 1000px;
+     width: 100%;
+     margin: 0 auto;
+}
+
+#hero {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     height: 200px;
+     margin-top: 95px;
+}
+
+#hero input[type='email'] {
+     max-width: 275px;
+     width: 100%;
+     padding: 5px;
+     margin-top: 5px;
+}
+
+#hero>h2 {
+     margin-bottom: 20px;
+}
+
+#our-course {
+     margin-top: 30px;
+}
+
+.grid {
+     display: flex;
+}
+
+#our-course .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+
+#our-course .description {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 125px;
+     width: 80vw;
+     padding: 5px;
+
+}
+
+.fa-2xl {
+     font-size: 5rem;
+}
+
+
+#business-english {
+     margin-top: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#business-english>iframe {
+     max-width: 560px;
+     width: 100%;
+}
+
+#prices {
+     margin-top: 60px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+
+@media (max-width: 800px) {
+     #prices {
+          flex-direction: column;
+     }
+     .product {
+          max-width: 300px;
+          width: 100%;
+          margin: 0 auto;
+          margin-bottom: 10px;
+     }
+
+}
+
+.product {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+     width: calc(100% / 2);
+     margin: 10px;
+     border: 1px solid #000;
+     border-radius: 3px;
+     min-height: 30vh;
+
+}
+
+
+.product>.level {
+     background-color: #ddd;
+     color: #000;
+     padding: 15px 0;
+     width: 100%;
+     text-transform: uppercase;
+     font-weight: 700;
+}
+
+.product>h2 {
+     margin-top: 15px;
+     margin-bottom: 0;
+}
+
+.product>p {
+     font-size: 0.75rem;
+     margin: 0 auto;
+
+}
+
+.product>ol {
+     margin: 15px 0;
+     
+}
+
+.product>ol>li {
+     padding: 5px 0;
+}
+
+
+.btn {
+     padding: 0 20px;
+     height: 40px;
+     font-size: 1em;
+     font-weight: 400;
+     text-transform: uppercase;
+     border-radius: 2px;
+     background-color: #f1c40f;
+     cursor: pointer;
+     border: 0;
+     margin: 15px;
+}
+
+#flex-end {
+     margin-top: auto;
+}
+
+

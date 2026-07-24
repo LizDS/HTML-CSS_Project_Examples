@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Technical Documentation Page</title>
+    <meta name="description" content="Techinical Documentation Page for learning Code"> 
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar">
+        <header>Technical Documentation Page</header>
+        <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#html_basics" class="nav-link">HTML Basics</a></li>
+            <li><a href="#common_html_tags" class="nav-link">Common HTML Tags</a></li>
+            <li><a href="#forms" class="nav-link">Forms</a></li>
+            <li><a href="#semantic_elements" class="nav-link">Semantic Elements</a></li>
+            <li><a href="#best_practices" class="nav-link">Best Practices</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article>
+                <p>HTML (HyperText Markup Language) is the standard markup language used to create and design web pages. It structures the content on the web by using a system of elements, also known as tags.</p>
+            </article>
+        </section>
+        <section class="main-section" id="html_basics">
+            <header>HTML Basics</header>
+                <article>
+                <p>An HTML document begins with a doctype declaration to define the version of HTML being used. The main structure of an HTML page includes:</p>
+                <ul>
+                    <li>The &lt;html&gt; element, which wraps the entire content.</li>
+                    <li>The &lt;head&gt; section, which contains meta-information like title, character encoding, and linked resources.</li>
+                    <li>The &lt;body&gt; section, which contains the content displayed on the web page, such as headings, paragraphs, and images.</li>
+                </ul>
+                <p>Code example:</p>
+                <div class="code-example">
+                    <code>
+                        <div class="code-nest1">&lt;body&gt;</div>
+                        <div class="code-nest2">&lt;h1&gt;Hello World&lt;/h1&gt;</div>
+                        <div class="code-nest1">&lt;/body&gt;</div>
+                    </code>
+                </div>
+                <p>Example rendered in the browser:</p>
+                <div class="example-inbrowser1">
+                    <h1>Hello World</h1>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="common_html_tags">
+            <header>Common HTML Tags</header>
+            <article>
+                <p>Here are some of the most commonly used HTML elements:</p>
+                <ul>
+                    <li>Headings: &lt;h1&gt; through &lt;h6&gt; represent different levels of headings.</li>
+                    <li>Paragraph: &lt;p&gt; defines a block of text.</li>
+                    <li>Anchor: &lt;a&gt; creates hyperlinks to other pages or external resources.</li>
+                    <li>Image: &lt;img&gt; embeds an image.</li>
+                    <li>Lists:
+                        <ul>
+                            <li>Unordered list: &lt;ul&gt; with &lt;li&gt; items.</li>
+                            <li>Ordered list: &lt;ol&gt; with &lt;li&gt; items.</li>
+                        </ul>
+                    </li>
+                    <li>Containers:
+                        <ul>
+                            <li>&lt;div&gt; is a block-level container.</li>
+                            <li>&lt;span&gt; is an inline container.</li></li>
+                        </ul>
+                </ul>
+                <p>Code example:</p>
+                <div class="code-example">
+                    <code>
+                        <div class="code-nest1">&lt;body&gt;</div>
+                        <div class="code-nest2">&lt;h1&gt;Hello World&lt;/h1&gt;</div>
+                        <div class="code-nest2">&lt;h2&gt;My first code&lt;/h2&gt;</div>
+                        <div class="code-nest2">&lt;p&gt;This is an example of my first code. Somethings I use coding for are:&lt;/p&gt;</div>
+                        <div class="code-nest2">&lt;ul&gt;</div>
+                            <div class="code-nest3">&lt;li&gt;Making Lists&lt;/li&gt;</div>
+                            <div class="code-nest3">&lt;li&gt;Making Websites&lt;/li&gt;</div>
+                        <div class="code-nest2">&lt;/ul&gt;</div>
+                        <div class="code-nest1">&lt;/body&gt;</div>
+                    </code>
+                </div>
+                <p>Example rendered in the browser:</p>
+                <div class="example-inbrowser1">
+                    <h1>Hello World</h1>
+                    <h2>My first code</h2>
+                    <p>This is an example of my first code. Somethings I use coding for are:</p>
+                    <ul>
+                        <li>Making Lists</li>
+                        <li>Making Websites</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="forms">
+            <header>Forms</header>
+            <article>
+                <p>HTML forms are used to collect user input. Key elements include:</p>
+                <ul>
+                    <li>&lt;form&gt;: Wraps all input fields and defines how data will be sent.</li>
+                    <li>&lt;input&gt;: Used for text, checkboxes, radio buttons, etc.</li>
+                    <li>&lt;label&gt;: Provides accessible labels for form controls.</li>
+                    <li>&lt;textarea&gt;: For multi-line text input.</li>
+                    <li>&lt;button&gt; or &lt;input type="submit"&gt;: For form submission.</li>
+                </ul>
+                <p>Forms typically include attributes such as action (URL where data is sent) and method (GET or POST).</p>
+                <p>Code example:</p>
+                <div class="code-example">
+                    <code>
+                        <div class="code-nest1">&lt;body&gt;</div>
+                            <div class="code-nest2">&lt;form&gt;</div>
+                                <div class="code-nest3">&lt;label for="name"&gt;First Name&lt;/label&gt;</div>
+                                <div class="code-nest3">&lt;input id="name" type="text" name="name" placeholder="John Smith"&gt;</div>
+                                <div class="code-nest3">&lt;label for="email"&gt;Email&lt;/label&gt;</div>
+                                <div class="code-nest3">&lt;input id="email" type="email" name="email" placeholder="example@gmail.com"&gt;</div>
+                                <div class="code-nest3">&lt;label for="comments"&gt;Comments&lt;/label&gt;</div>
+                                <div class="code-nest3">&lt;textarea id="comments" name="comments" placeholder="Place your message here..."&gt;&lt;/label&gt;</div>
+                            <div class="code-nest2">&lt;/form&gt;</div>
+                        <div class="code-nest1">&lt;/body&gt;</div>
+                    </code>
+                </div>
+                <p>Example rendered in the browser:</p>
+                <div class="example-inbrowser1">
+                    <form>
+                        <label for="name">First Name</label>
+                        <input id="name" type="text" name="name" placeholder="John Smith">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="example@gmail.com">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" placeholder="Place your message here..."></textarea>
+                    </form>
+                </div>
+            </article>
+        </section>
+
+        <section class="main-section" id="semantic_elements">
+            <header>Semantic Elements</header>
+            <article>
+                <p>Semantic HTML uses meaningful tags to improve accessibility and SEO by describing the structure of the content:</p>
+                <ul>
+                    <li>&lt;header&gt;: Represents introductory content or a group of navigational links.</li>
+                    <li>&lt;footer&gt;: Defines the footer for a section or document.</li>
+                    <li>&lt;nav&gt;: Used for primary navigation links.</li>
+                    <li>&lt;article&gt;: Represents self-contained content that can be independently reused or syndicated.</li>
+                    <li>&lt;section&gt;: Defines a thematic grouping of content.</li>
+                    <li>&lt;aside&gt;: Represents tangential content like sidebars.</li>
+                </ul>
+                <p>Code example:</p>
+                <div class="code-example">
+                    <code>
+                        <div class="code-nest1">&lt;body&gt;</div>
+                            <div class="code-nest2">&lt;header&gt;</div>
+                                <div class="code-nest3">&lt;nav&gt;</div>
+                                    <div class="code-nest4">&lt;ul&gt;</div>
+                                        <div class="code-nest5">&lt;li&gt;&lt;a href="#making-lists"&gt;Making Lists&lt;/a&gt;&lt;/li&gt;</div>
+                                        <div class="code-nest5">&lt;li&gt;&lt;a href="#making-websites"&gt;Making Lists&lt;/a&gt;&lt;/li&gt;</div>
+                                    <div class="code-nest4">&lt;/ul&gt;</div>
+                                <div class="code-nest3">&lt;/nav&gt;</div>
+                            <div class="code-nest2">&lt;body&gt;</div>
+                                <div class="code-nest3">&lt;section id="making-lists"&gt;</div>
+                                    <div class="code-nest4">&lt;h2&gt;Making Lists&lt;/h2&gt;</div>
+                                <div class="code-nest3">&lt;/section&gt;</div>
+                                <div class="code-nest3">&lt;section id="making-websites"&gt;</div>
+                                    <div class="code-nest4">&lt;h2&gt;Making Websites&lt;/h2&gt;</div>
+                                <div class="code-nest3">&lt;/section&gt;</div>
+                            <div class="code-nest2">&lt;/header&gt;</div>
+                            <div class="code-nest2">&lt;footer&gt;</div>
+                                <div class="code-nest3">&lt;p&gt;Copyright ©️Elizabeth Sosich&lt;/p&gt;</div>
+                            <div class="code-nest2">&lt;/footer&gt;</div>
+                        <div class="code-nest1">&lt;/body&gt;</div>
+                    </code>
+                </div>
+                <p>Example rendered in the browser:</p>
+                <div class="example-inbrowser1">
+                    <header>
+                        <nav>
+                            <ul id="example-inbrowser1-nav">
+                                <li><a href="#making-lists">Making Lists</a></li>
+                                <li><a href="#making-websites">Making Lists</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <body>
+                        <section id="making-lists">
+                            <h2>Making Lists</h2>
+                        </section>
+                        <section id="making-websites">
+                            <h2>Making Websites</h2>
+                        </section>
+                    </body>
+                    <footer>
+                        <p>Copyright ©️Elizabeth Sosich</p>
+                    </footer>
+                </div>
+            </article>
+        </section>
+
+        <section class="main-section" id="best_practices">
+            <header>Best Practices</header>
+            <article>
+                <p>Semantic HTML uses meaningful tags to improve accessibility and SEO by describing the structure of the content:</p>
+                <ul>
+                    <li>Always start documents with &lt;!DOCTYPE html&gt; to ensure correct rendering in browsers.</li>
+                    <li>Use semantic elements wherever possible for better structure and accessibility.</li>
+                    <li>Keep code organized with consistent indentation and commenting.</li>
+                    <li>Use lowercase for tags and attribute names.</li>
+                    <li>Always include the alt attribute for images for accessibility.</li>
+                    <li>Validate HTML code using the W3C Validator to catch syntax and structural errors.</li>
+                    <li>Link external CSS and JavaScript files for better separation of concerns.</li>
+                </ul>
+                <div class="code-example">
+                    <code>
+                        <div class="code-nest1">&lt;head&gt;</div>
+                        <div class="code-nest2">&lt;link href="styles.css" rel="stylesheet" &gt;</div>
+                        <div class="code-nest1">&lt;/head&gt;</div>
+                    </code>
+                </div>
+            </article>
+        </section>
+    </main>
+  
+  </body>
+</html>
