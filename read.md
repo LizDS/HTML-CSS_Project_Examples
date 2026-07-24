@@ -1,0 +1,2 @@
+Welcome to LizDS's HTML and CSS practice section. These are some of the projects which I completed in 2025 as part of my Responsive Web Design Cert from freeCodeCamp.
+Thank you to all the amazing people at freeCodeCamp for making this possible. 🙏
